@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+  /* ==== CUSTOMIZAÇÃO DOS LINKS ==== */
+
+  a:link {
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    font-weight: normal;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+    font-weight: bold;
+  }
+
+  a:active {
+    color: white;
+  }
+
+  /* ====  FIM CUSTOMIZAÇÃO DOS LINKS ==== */
+
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #menu-principal {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 50px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .menu-left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 17%;
+    height: 50px;
+    background-color: #357CA5;
+  }
+  
+  .menu-middle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 48%;
+    height: 50px;
+    background: #3C8DBC;
+  }
+
+  .botao-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 8px;
+    line-height: 5px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .botao-mobile:hover {
+    background: #357CA5;
+    color: white;
+  }
+  
+  .menu-right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    padding-right: 20px;
+    width: 35%;
+    height: 50px;
+    background: #3C8DBC;
+  }
+  
+  /* ==== MENU ASIDE ==== */
+
+  .menu-aside {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #222D32;
+    width: 17%;
+  }
+
+  .tela-nome-busca {
+    display: grid;
+
+    color: white;
+    width: 100%;
+    height: 130px;
+  }
+
+  .tela-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .imagem-usuario {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 40%;
+    height: 75px;
+    padding-left: 15px;
+  }
+
+  .nome-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 60%;
+    height: 75px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .nome-status span[class="nome-usuario"] {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    margin-bottom: 5px;
+  }
+
+  .nome-status span[class="online"] {
+    cursor: pointer;
+    font-size: 11px;
+  }
+
+  .nome-status span[class="icone-online"] {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+  }
+
+  .tela-inferior {
+    width: 100%;
+  }
+
+  .busca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 55px;
+    width: 100%;
+  }
+
+  .busca .input-group {
+    width: 90%;
+    padding-right: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+  }
