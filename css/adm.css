@@ -95,12 +95,26 @@
   
   /* ==== MENU ASIDE ==== */
 
+  .conteudo-principal {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .conteudo-esquerdo {
+    width: 17%;
+  }
+
+  .conteudo-direito {
+    width: 83%;
+  }
+
   .menu-aside {
     display: flex;
     flex-direction: column;
     
     background-color: #222D32;
-    width: 17%;
+    width: 100%;
   }
 
   .tela-nome-busca {
@@ -181,4 +195,65 @@
     padding-right: 10px;
     border: 1px solid lightgrey;
     border-radius: 4px;
+  }
+
+  .label-navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    background-color: #1A2226;
+    color: #3A5B5A;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+
+
+  .item-navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    background-color: #1E282C;
+    color: white;
+    font-size: 15px;
+  }
+
+  .item-navegacao:hover {
+    background: #1A2226;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li a:link {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Arial';
+  }
+
+  .link {
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
+  .submenu {
+    display: none;
+    width: 100%;
+    height: 50px;
+    padding-left: 25px;
+    background-color: #2C3B41;
+  }
+
+  .sublink {
+    cursor: pointer;
   }

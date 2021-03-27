@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+        <javascript src="js/main.js"></javascript>
     </head>
     <body>
 
@@ -39,9 +41,10 @@
 
         </div>
 
-        <main>
+        <main class="conteudo-principal">
 
-          <section>
+          <section class="conteudo-esquerdo">
+
             <aside class="menu-aside">
               
               <div class="tela-nome-busca">
@@ -50,31 +53,119 @@
                  
                   <div class="imagem-usuario">
                     <img src="img/john_doe.jpg" alt="imagem do usuário" class="rounded-circle" width="55%" height="60%">
-                  </div>
-
+                  </div> <!-- FIM DA DIV IMAGEM-USUARIO -->
+        
                   <div class="nome-status">
                     <span class="nome-usuario">John Doe</span>
                     <span class="online"> <span class="icone-online"></span> Online </span>
-                  </div>
+                  </div> <!-- FIM DA DIV NOME-STATUS -->
                   
-                </div>
-
+                </div> <!-- FIM DA DIV TELA-SUPERIOR -->
+        
                 <div class="tela-inferior">
                   <div class="busca">
                     
                     <div class="input-group">
                       <input type="text" class="form-control" style="background: transparent; border: none;" placeholder="Pesquisar...">
-                      <span class="input-group-addon flex-center">
+                      <span class="input-group-addon flex-column-center">
                         <button class="fa fa-search" style="background:transparent;border:none;"></button>
                       </span>
-                    </div>
-
-                  </div>
+                    </div> <!-- FIM DA DIV INPUT-GROUP -->
+        
+                  </div> <!-- FIM DA DIV BUSCA -->
+                </div> <!-- FIM DA DIV TELA-INFERIOR -->
+        
+              </div> <!-- FIM DA DIV TELA-NOME-BUSCA -->
+        
+              <div class="label-navegacao">
+                <p>NAVEGAÇÃO PRINCIPAL</p>
+              </div>
+        
+              <nav>
+        
+                <div>
+                  <ul class="item-navegacao">
+                    <li class="link">
+                      <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                      <ul class="submenu">
+                        <li class="sublink">
+                          <a href="#">Dashboard v1</a>
+                        </li>
+                        <li class="sublink">
+                          <a href="#">Dashboard v1</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
 
-              </div>
+                <div>
 
+                  <ul class="item-navegacao">
+                      <li class="link">
+                        <a href="#">Dashboard</a>
+                      </li>
+                      <li>
+                        <ul class="submenu">
+                          <li class="sublink">
+                            <a href="#">Dashboard v1</a>
+                          </li>
+                          <li class="sublink">
+                            <a href="#">Dashboard v1</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </ul>
+
+                </div>
+
+                <div>
+                  <ul class="item-navegacao">
+                    <li class="link" onclick="dropdown('#submenu1')">
+                      <a href="#">Dashboard</a>
+                    </li>
+                    <li id="submenu1">
+                      <ul class="submenu">
+                        <li class="sublink">
+                          <a href="#">Dashboard v1</a>
+                        </li>
+                        <li class="sublink">
+                          <a href="#">Dashboard v1</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <ul class="item-navegacao">
+                    <li class="link">
+                      <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                      <ul class="submenu">
+                        <li class="sublink">
+                          <a href="#">Dashboard v1</a>
+                        </li>
+                        <li class="sublink">
+                          <a href="#">Dashboard v1</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+        
+              </nav>
+        
             </aside>
+        
+          </section>
+        
+          <section class="conteudo-direito">
+            CONTEÚDO TESTE 
           </section>
 
         </main>
